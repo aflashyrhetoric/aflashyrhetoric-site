@@ -1,0 +1,3 @@
+module BasicPagesHelper
+	
+end
