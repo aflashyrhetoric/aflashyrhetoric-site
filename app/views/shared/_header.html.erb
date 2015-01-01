@@ -7,28 +7,22 @@
 
         <!-- Brand Image-->
         <a href="#" class="navbar-brand">Brand</a>
+
       </div> <!--navbar-header-->
 
-
+      <!--navbar links-->
       <div class="nav navbar-nav">
-
-
-     
-     
-      <%= 'active' if params[:controller] == 'portfolio' %>
-      <%= 'active' if params[:controller] == 'contact' %>
         <li class = "<%= 'active' if params[:action] == 'home' %>">
-          <%= link_to 'home', 'home'  %>
-        </li>
-        <li class = "<%= 'active' if params[:action] == 'blog' %>">
-          <%= link_to 'blog', {:controller => 'blog', :action => 'index'} %>
-        </li>
-        <li class = "<%= 'active' if params[:action] == 'portfolio' %>">
-          <%= link_to 'portfolio', 'portfolio'  %>
-        </li>
+          <%= link_to 'home', {:controller => 'basic_pages', :action => 'home'} %></li>
+
+        <li class = "<%= 'active' if params[:controller] == 'blog' %>">
+          <%= link_to 'blog', 'blog' %></li>
+
+        <li class = "<%= 'active' if params[:controller] == 'portfolio' %>">
+          <%= link_to 'portfolio', 'portfolio'  %> </li>
+
        <li class = "<%= 'active' if params[:action] == 'contact' %>" >
-          <%= link_to 'contact', 'contact'  %>
-          </li>
+          <%= link_to 'contact', 'contact' %></li>
         <li class = ></li>
       </div>
     </div> <!--container-fluid-->
