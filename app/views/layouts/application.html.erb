@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Aflashyrhetoric</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <title><%=
+    # adjusts page title 
+    if defined?(@page_title)
+    	"aflashyrhetoric | " + "#{@page_title}"
+    else
+    	"aflashyrhetoric"
+    end
+  %></title>
+
+  <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>

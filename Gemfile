@@ -28,6 +28,9 @@ gem 'google-webfonts-rails'
 gem 'bootstrap-sass', '~> 3.3.1'
 # Autoprefixer with Bootstrap to add browser vendor prefixes automatically
 gem 'autoprefixer-rails'
+# Normalize-Rails makes browsers render all elements more consistently and in line with modern standards
+gem 'normalize-rails'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
