@@ -11,8 +11,25 @@
 
 
       <div class="nav navbar-nav">
-        <li class="active"><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+
+
+     
+     
+      <%= 'active' if params[:controller] == 'portfolio' %>
+      <%= 'active' if params[:controller] == 'contact' %>
+        <li class = "<%= 'active' if params[:action] == 'home' %>">
+          <%= link_to 'home', 'home'  %>
+        </li>
+        <li class = "<%= 'active' if params[:action] == 'blog' %>">
+          <%= link_to 'blog', {:controller => 'blog', :action => 'index'} %>
+        </li>
+        <li class = "<%= 'active' if params[:action] == 'portfolio' %>">
+          <%= link_to 'portfolio', 'portfolio'  %>
+        </li>
+       <li class = "<%= 'active' if params[:action] == 'contact' %>" >
+          <%= link_to 'contact', 'contact'  %>
+          </li>
+        <li class = ></li>
       </div>
     </div> <!--container-fluid-->
   </nav>
