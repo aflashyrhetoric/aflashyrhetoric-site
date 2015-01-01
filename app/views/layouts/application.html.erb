@@ -11,13 +11,21 @@
     end
   %></title>
 
+  <%= google_webfonts_init({
+    google: ['Lato', 'Merriweather']
+    }) %>
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= render(:partial => 'shared/header') %>
+
 </head>
 <body>
 
+<!--begin yield-->
 <%= yield %>
+<!--end yield-->
 
+<%= render(:partial => 'shared/footer') %>
 </body>
 </html>

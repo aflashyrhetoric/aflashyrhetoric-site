@@ -18,3 +18,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$primary-color: #333;
+
+h1, p{
+	font-family: 'Lato';
+}
+
+header{
+	a{
+		font-family: 'Lato';
+		color: $primary-color;
+	}
+	
+}

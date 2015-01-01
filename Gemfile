@@ -30,6 +30,7 @@ gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
 # Normalize-Rails makes browsers render all elements more consistently and in line with modern standards
 gem 'normalize-rails'
+# Gem 
 
 
 # Use ActiveModel has_secure_password
@@ -42,6 +43,13 @@ gem 'normalize-rails'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+
+  # Gem Guard 
+  gem 'guard'
+
+  # Gem for LiveReload on Chrome
+  gem 'guard-livereload', require:false
+
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'debugger'
 
