@@ -33,7 +33,7 @@ gem 'normalize-rails'
 
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -42,6 +42,13 @@ gem 'normalize-rails'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+
+  # Gem Guard 
+  gem 'guard'
+
+  # Gem for LiveReload on Chrome
+  gem 'guard-livereload', require:false
+
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'debugger'
 

@@ -18,9 +18,21 @@ Rails.application.routes.draw do
 
   get 'basicpages/contact'
 
+  get 'basicpages/about'
+
   get 'basic_pages_controller/home'
 
   get 'basic_pages_controller/contact'
+
+  get 'basic_pages_controller/about'
+
+  get '/blog', to: 'blog#index'
+
+  get '/portfolio', to: 'portfolio#index'
+
+  get '/contact', to: 'basic_pages#contact'
+
+  get '/about', to: 'basic_pages#about'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
