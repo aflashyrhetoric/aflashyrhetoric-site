@@ -1,8 +1,14 @@
 #jumbotron{
 	width: 600px;
 	text-align: center;
+	background-image: url('/assets/images/bridge.jpg');
+}
+
+.jumbotron{
+	background-image: url("/assets/images/bridge.jpg")
 }
 
 h1{
 	font-family: 'Lato', sans-serif;
+	color:blue;
 }

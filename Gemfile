@@ -30,11 +30,10 @@ gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
 # Normalize-Rails makes browsers render all elements more consistently and in line with modern standards
 gem 'normalize-rails'
-# Gem 
 
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
