@@ -1,1 +1,23 @@
 <% @page_title = "portfolio" %>
+
+ <div>
+    <h1>past work</h1>
+    <% @portfolio_sites.each do |site| %>
+  
+
+    <div class="row-site">
+      <div class="col-md-6">
+        <ul>
+          <li class="title"> <%= site.title %> </li>
+          <li class="description"> <%= site.description %> </li>
+        </ul>
+      </div>
+    
+      <div class="col-md-6">
+        <%= image_tag(site.thumburl, size: "300x100") %> 
+      </div>
+    </div>
+  
+    <hr>
+    <% end %>
+</div>
