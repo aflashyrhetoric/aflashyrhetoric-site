@@ -1,23 +1,26 @@
 <% @page_title = "portfolio" %>
 
- <div>
-    <h1>past work</h1>
-    <% @portfolio_sites.each do |site| %>
-  
+<% @portfolio_sites.each do |site| %>
+<div class="portfolioContainer container-fluid">
+  <div class="portfolioRow row">
 
-    <div class="row-site">
-      <div class="col-md-6">
-        <ul>
-          <li class="title"> <%= site.title %> </li>
-          <li class="description"> <%= site.description %> </li>
-        </ul>
-      </div>
-    
-      <div class="col-md-6">
-        <%= image_tag(site.thumburl, size: "300x100") %> 
-      </div>
+    <div class="col-md-4">
+      <ul>
+        <li class="title"><%= site.title %></li>
+        <br>
+        <li class="description"><%= site.description %></li>
+        <br>
+        <li class="technologyUsed"><b>Technology Used:</b> <%= site.technology_used %></li>
+        <br>
+        <li class="URL"><b>Visit:</b> <%= link_to site.URL, site.URL %> </li>
+      </ul>
     </div>
-  
-    <hr>
-    <% end %>
-</div>
+
+    <div class="col-md-8">
+      <%= link_to image_tag(site.thumburl, class: "img-thumbnail"), site.URL %> 
+    </div>
+
+  </div> <!--Row-->
+</div> <!--Container-->
+
+<% end %>

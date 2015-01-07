@@ -30,6 +30,8 @@ gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
 # Normalize-Rails makes browsers render all elements more consistently and in line with modern standards
 gem 'normalize-rails'
+# Font-Awesome Library gives fonts and icons
+gem 'font-awesome-rails'
 
 
 # Use ActiveModel has_secure_password

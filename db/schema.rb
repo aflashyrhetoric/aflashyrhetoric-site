@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150105214410) do
+ActiveRecord::Schema.define(version: 20150107222043) do
 
   create_table "admin_users", force: :cascade do |t|
     t.string   "first_name",      limit: 25
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20150105214410) do
     t.text     "technology_used"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.string   "URL"
   end
 
 end
