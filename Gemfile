@@ -32,17 +32,16 @@ gem 'autoprefixer-rails'
 gem 'normalize-rails'
 # Font-Awesome Library gives fonts and icons
 gem 'font-awesome-rails'
-# # Cloud independent database for input/output
-# gem 'taps'
+# Simplified web forms
+gem 'simple_form'
 # More robust webserver
 gem 'thin'
-
-
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-
 # I don't know
 gem 'i18n', '~> 0.7.0'
+# Mailing
+gem 'mail_form'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
