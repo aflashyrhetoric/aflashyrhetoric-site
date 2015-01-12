@@ -32,8 +32,8 @@ gem 'autoprefixer-rails'
 gem 'normalize-rails'
 # Font-Awesome Library gives fonts and icons
 gem 'font-awesome-rails'
-# Cloud independent database for input/output
-gem 'taps'
+# # Cloud independent database for input/output
+# gem 'taps'
 # More robust webserver
 gem 'thin'
 
@@ -51,12 +51,6 @@ gem 'i18n', '~> 0.7.0'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-
-  # Gem Guard 
-  gem 'guard'
-
-  # Gem for LiveReload on Chrome
-  gem 'guard-livereload', require:false
 
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'debugger'
