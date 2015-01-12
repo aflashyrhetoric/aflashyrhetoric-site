@@ -213,6 +213,7 @@ DEPENDENCIES
   google-webfonts-rails
   guard
   guard-livereload
+  i18n (~> 0.7.0)
   jbuilder (~> 2.0)
   jquery-rails
   normalize-rails
