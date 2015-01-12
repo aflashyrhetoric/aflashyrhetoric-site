@@ -32,6 +32,10 @@ gem 'autoprefixer-rails'
 gem 'normalize-rails'
 # Font-Awesome Library gives fonts and icons
 gem 'font-awesome-rails'
+# Cloud independent database for input/output
+gem 'taps'
+# More robust webserver
+gem 'thin'
 
 
 # Use ActiveModel has_secure_password
