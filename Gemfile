@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Swapping to POSTGRESQL
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -32,10 +32,17 @@ gem 'autoprefixer-rails'
 gem 'normalize-rails'
 # Font-Awesome Library gives fonts and icons
 gem 'font-awesome-rails'
+# # Cloud independent database for input/output
+# gem 'taps'
+# More robust webserver
+gem 'thin'
 
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+
+# I don't know
+gem 'i18n', '~> 0.7.0'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -44,12 +51,6 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-
-  # Gem Guard 
-  gem 'guard'
-
-  # Gem for LiveReload on Chrome
-  gem 'guard-livereload', require:false
 
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'debugger'
@@ -61,3 +62,4 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'rails_12factor', group: :production
