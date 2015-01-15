@@ -2,9 +2,13 @@ Rails.application.routes.draw do
 
   resources :clients, :portfolio_sites, :contacts
 
+  # Root route
   root 'basic_pages#home'
 
-  # Custom mappings
+  # Default route
+  match ':controller(/:action(/:id))', :via => :get
+
+  # Custom routes 
 
   get '/blog', to: 'blog#index'
   get '/portfolio', to: 'portfolio#index'

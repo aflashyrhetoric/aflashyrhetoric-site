@@ -7,8 +7,8 @@ class Contact < MailForm::Base
     {
       :subject => "My Contact Form",
       :to => "aflashyrhetoric@gmail.com",
-      :from => %("#{name}" <#{email}>)
+      :from => %("#{name}" <#{email}>) # FROM field would resemble: 'Michael Smith' <msmith@gmail.com>
+      # Uses Perl-inspired %() or %{} syntax to indicate a string.
     }
   end
-
 end

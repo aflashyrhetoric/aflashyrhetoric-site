@@ -38,11 +38,12 @@ gem 'simple_form'
 gem 'thin'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-# I don't know
+# Rails Internalization Framework for multi-language support
 gem 'i18n', '~> 0.7.0'
-# Mailing
+# Mailing Made Easy
 gem 'mail_form'
-
+# Devise gem for authenticating contact mail features
+gem 'devise' 
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -63,6 +64,10 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # Allows us to use the environment file by accessing local variables before starting the application
+  gem 'foreman'
+
 end
 
 gem 'rails_12factor', group: :production

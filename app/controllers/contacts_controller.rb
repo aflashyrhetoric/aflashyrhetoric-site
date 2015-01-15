@@ -5,10 +5,12 @@ class ContactsController < ApplicationController
   end
 
   def new 
+    # Creates instance variable for use in new.html.erb
     @contact = Contact.new
 	end
 
 	def create 
+    # Creates new variable depending on information in GET/POST response by user
     @contact = Contact.new(params[:contact])
 
     if @contact.deliver
