@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
 
   def index
-   render (contacts/new)
+    redirect_to 'contacts/new'
   end
 
   def new 
@@ -10,7 +10,6 @@ class ContactsController < ApplicationController
 
 	def create 
     @contact = Contact.new(params[:contact])
-    @contact.request = request
 
     if @contact.deliver
       flash.now[:notice] = 'Thank you for your message.'
