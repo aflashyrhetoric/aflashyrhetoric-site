@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :clients, :portfolio_site
+
   root 'basic_pages#home'
 
   get 'blog/index'

@@ -12,7 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -42,8 +42,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'i18n', '~> 0.7.0'
 # Mailing
 gem 'mail_form'
-# Javascript runtime that's safe
-gem 'therubyracer'
+
 
 # Use Unicorn as the app server
 # gem 'unicorn'
