@@ -1,9 +1,25 @@
 <% @page_title = "contact" %>
+<% @message_sent = true %>
 
 
-# <%= simple_form_for @client do |f| %>
-#   <%= f.input :name , placeholder: 'Name*' %>
-#   <%= f.input :subject, placeholder: 'Make me an amazing website!'%>
-#   <%= f.text :message, placeholder: 'I need a retail store for my bubble bath business.'%>
-# <% end %>
 
+<div class = "container">
+  <%= form_tag("/message", method: "post", class: "col-md-6") do %>
+    <%= label_tag(:name, "Name") %>
+    <br>
+    <%= text_field_tag(:name) %>
+    <br>
+    <br>
+    <%= label_tag(:title, "Subject") %>
+    <br>
+    <%= text_field_tag(:title) %>
+    <br>
+    <br>
+    <%= label_tag(:message, "Message") %>
+    <br>
+    <%= text_area_tag(:message) %>
+    <br>
+    <br>
+    <%= submit_tag("Submit") %>
+  <% end %>
+</div>

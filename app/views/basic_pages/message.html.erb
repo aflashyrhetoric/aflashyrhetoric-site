@@ -1,0 +1,13 @@
+<% @page_title = "message" %>
+
+<div class="container">
+  <% if @message_sent %>
+  <h1>Message has been sent.</h1>
+  <p>I will get back to you as soon as possible. Thank you!</p>
+  <% else %>
+  <h1>If you'd like to send a message, please visit the <%= link_to "Contact page", 
+      {:controller => 'basic_pages', :action => 'contact'} %></h1> 
+  <% end %>
+  <%= link_to 'Return Home', {:controller => 'basic_pages', :action => 'home'} %>
+</div>
+

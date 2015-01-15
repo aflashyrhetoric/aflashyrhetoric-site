@@ -28,6 +28,8 @@ Rails.application.routes.draw do
 
   get 'basic_pages_controller/about'
 
+  # Custom mappings
+
   get '/blog', to: 'blog#index'
 
   get '/portfolio', to: 'portfolio#index'
@@ -35,6 +37,11 @@ Rails.application.routes.draw do
   get '/contact', to: 'basic_pages#contact'
 
   get '/about', to: 'basic_pages#about'
+
+  get '/message', to: 'basic_pages#message'
+
+  post '/message', to: 'basic_pages#message'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
