@@ -1,0 +1,13 @@
+<% @page_title = "contact" %>
+
+<div class="container messagesent">
+  <h1>Send me a message!</h1>
+
+  <%= simple_form_for @contact do |f| %>
+  <%= f.input :name, placeholder: "name", :required => true %>
+  <%= f.input :email, placeholder: "email", :required => true %>
+  <%= f.input :message, :as => :text, :required => true %>
+  <br>
+  <%= f.button :submit, 'Send', :class => "btn btn-primary" %>
+  <% end %>
+</div>

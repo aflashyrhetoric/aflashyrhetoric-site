@@ -1,46 +1,18 @@
 Rails.application.routes.draw do
 
-  resources :clients, :portfolio_site
+  resources :clients, :portfolio_sites, :contacts
 
   root 'basic_pages#home'
-
-  get 'blog/index'
-
-  get 'blog/show'
-
-  get 'portfolio/index'
-
-  get 'portfolio/index' => 'portfolio#index'
-
-  get 'basic_pages/home'
-
-  get 'basic_pages/contact'
-
-  get 'basicpages/home'
-
-  get 'basicpages/contact'
-
-  get 'basicpages/about'
-
-  get 'basic_pages_controller/home'
-
-  get 'basic_pages_controller/contact'
-
-  get 'basic_pages_controller/about'
 
   # Custom mappings
 
   get '/blog', to: 'blog#index'
-
   get '/portfolio', to: 'portfolio#index'
-
-  get '/contact', to: 'basic_pages#contact'
-
+  get '/contact', to: 'contacts#new'
+  get '/contact/index', to: 'contacts#new'
   get '/about', to: 'basic_pages#about'
-
-  get '/message', to: 'basic_pages#message'
-
-  post '/message', to: 'basic_pages#message'
+  get '/message', to: 'contact#message'
+  post '/message', to: 'contact#message'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

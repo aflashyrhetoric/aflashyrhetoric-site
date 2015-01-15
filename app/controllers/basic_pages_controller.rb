@@ -6,11 +6,4 @@
   def about
   end
 
-  def contact
-  	@client = Client.new
-  end
-
-  def message 
-  	
-  end
 end
