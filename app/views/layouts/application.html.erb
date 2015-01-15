@@ -12,9 +12,9 @@
   %></title>
 
   <%= google_webfonts_init({
-    google: ['Lato', 'Merriweather']
+    google: ['Lato', 'Merriweather'] # Fonts array
     }) %>
-  <%= stylesheet_link_tag "application" %>
+  <%= stylesheet_link_tag 'application' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= render(:partial => 'shared/header') %>

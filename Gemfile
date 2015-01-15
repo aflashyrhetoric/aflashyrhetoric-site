@@ -42,7 +42,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'i18n', '~> 0.7.0'
 # Mailing
 gem 'mail_form'
-
+# Javascript runtime that's safe
+gem 'therubyracer'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
